@@ -4,8 +4,8 @@ A basic understanding of data structures
 ## Arrays
 ### I am using swift for the following:
 
-var anArray=[0,3,5,0,7,64,7,8,1,4,0,7,5]
-var numOfIndex = anArray.count
+var anArray=[0,3,5,0,7,64,7,8,1,4,0,7,5].text-blue on white
+var numOfIndex = anArray.count.text-blue on white
 
 ### now to get the item at any perticular index
 print(anArray[4]) 
