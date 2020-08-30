@@ -81,6 +81,73 @@ cat = meat
 hamster = fruit
 
 
+### Updating an item multiArray
+multiArray[petFood][1]='fish'
+let updateFood2=multiArray[petFood][1]
+console.log(pet2,"=",updateFood2)
 
+output: 
 
+cat = fish
 
+### The Multidimensional Array
+console.log(multiArray)
+
+output:
+
+[ [ 'dog', 'cat', 'hamster' ], [ 'meat', 'fish', 'fruit' ] ]
+
+## Jagged Arrays
+### C# was used for the following:
+
+using System;
+
+class Program
+{
+    static void Main() {
+    
+     int[][] jagged= new int [4][];
+     
+     //row 0
+     
+     jagged[0]=new int[5];
+     
+     
+     jagged[0][0]= 1;
+     
+     jagged[0][1]= 10;
+     
+     jagged[0][2]= 11;
+     
+     jagged[0][3]= 3;
+     
+     jagged[0][4]= 8;
+     
+     
+     
+     //row 1
+     
+     jagged[1]= new int[9];
+     
+     
+     //row 2
+     
+     jagged[2]= new int[3] {10,20,30};
+     
+     
+     
+     //row 4
+     
+     jagged[3]= new int[1];
+     
+     jagged[3][0]= 100;
+     
+     
+     Console.WriteLine("At row 4, col 0: "+jagged[3][0]);
+    
+    }
+    
+}
+
+output:
+At row 4, col 0: 100
