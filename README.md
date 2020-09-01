@@ -11,20 +11,27 @@ A basic understanding of data structures
 ### To get the item at any perticular index
     print(anArray[4]) 
 
-output: 7
+output: 
+   
+    7
 
-### If we try and get an index out of bounds we get an index out of bounds error. Program tries to access an index that doesn't exist 
+### Try and get an index out of bounds. Program tries to access an index that doesn't exist 
     print(anArray[100]) 
 
-output: error as the given array does not have 100 items
+output: 
 
-### Above we saw that the code will give an error if we try and get the 100th index. but how many indexes are there?
+    Fatal error: Index out of range
+
+### Number of indexes
     print(numOfIndex) 
 
 this will give us the count of all the items in the array
 
-output: 13
-#### Note that it tells us the number of items and not the index, so if there are 13 items in the given array, the index of the last item will be 12 as the index count starts from 0.
+output: 
+    
+    13
+    
+Note that it tells us the number of items and not the index, so if there are 13 items in the given array, the index of the last item will be 12 as the index count starts from 0.
 
 ### To get the of all the indexes in an array
     var sum=0
@@ -33,13 +40,17 @@ output: 13
     }
     print(sum)
 
-output: 111
+output: 
+
+    111
 
 ### To get the average of the sum of all indexes
     var avg=sum/numOfIndex
     print(avg)
 
-output: 8
+output: 
+
+    8
 
 
 ## Multidimensional-Arrays
@@ -74,11 +85,11 @@ output: 8
 
 output:
 
-dog = meat
+    dog = meat
 
-cat = meat
+    cat = meat
 
-hamster = fruit
+    hamster = fruit
 
 
 ### Updating an item multiArray
@@ -88,18 +99,19 @@ hamster = fruit
 
 output: 
 
-cat = fish
+    cat = fish
 
 ### The Multidimensional Array
     console.log(multiArray)
 
 output:
 
-[ [ 'dog', 'cat', 'hamster' ], [ 'meat', 'fish', 'fruit' ] ]
+    [ [ 'dog', 'cat', 'hamster' ], [ 'meat', 'fish', 'fruit' ] ]
 
 ## Jagged Arrays
 ### C# was used for the following:
-
+C# natively differentiates between jagged and multidimentional arrays, which some other languages don't.
+    
     using System;
 
     class Program
@@ -144,10 +156,19 @@ output:
 
 
          Console.WriteLine("At row 4, col 0: "+jagged[3][0]);
+         Console.WriteLine("At row 3, col 3: "+jagged[2][2]);
+         Console.WriteLine("At row 2, col 8: "+jagged[1][7]);
+         Console.WriteLine("At row 1, col 2: "+jagged[0][1]);
+
 
         }
 
     }
 
 output:
-At row 4, col 0: 100
+     
+    At row 4, col 0: 100
+    At row 3, col 3: 30
+    At row 2, col 8: 0
+    At row 1, col 2: 10
+ 
