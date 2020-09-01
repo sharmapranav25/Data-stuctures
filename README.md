@@ -110,7 +110,8 @@ output:
 
 ## Jagged Arrays
 ### C# was used for the following:
-
+C# natively differentiates between jagged and multidimentional arrays, which some other languages don't.
+    
     using System;
 
     class Program
@@ -155,6 +156,10 @@ output:
 
 
          Console.WriteLine("At row 4, col 0: "+jagged[3][0]);
+         Console.WriteLine("At row 3, col 3: "+jagged[2][2]);
+         Console.WriteLine("At row 2, col 8: "+jagged[1][7]);
+         Console.WriteLine("At row 1, col 2: "+jagged[0][1]);
+
 
         }
 
@@ -162,5 +167,8 @@ output:
 
 output:
      
-     At row 4, col 0: 100
+    At row 4, col 0: 100
+    At row 3, col 3: 30
+    At row 2, col 8: 0
+    At row 1, col 2: 10
  
