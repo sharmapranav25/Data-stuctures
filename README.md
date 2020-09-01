@@ -11,7 +11,8 @@ A basic understanding of data structures
 ### To get the item at any perticular index
     print(anArray[4]) 
 
-output: 7
+output: 
+    7
 
 ### If we try and get an index out of bounds we get an index out of bounds error. Program tries to access an index that doesn't exist 
     print(anArray[100]) 
@@ -23,7 +24,8 @@ output: error as the given array does not have 100 items
 
 this will give us the count of all the items in the array
 
-output: 13
+output: 
+    13
 #### Note that it tells us the number of items and not the index, so if there are 13 items in the given array, the index of the last item will be 12 as the index count starts from 0.
 
 ### To get the of all the indexes in an array
@@ -39,7 +41,8 @@ output: 111
     var avg=sum/numOfIndex
     print(avg)
 
-output: 8
+output: 
+    8
 
 
 ## Multidimensional-Arrays
@@ -74,11 +77,11 @@ output: 8
 
 output:
 
-dog = meat
+    dog = meat
 
-cat = meat
+    cat = meat
 
-hamster = fruit
+    hamster = fruit
 
 
 ### Updating an item multiArray
@@ -88,14 +91,14 @@ hamster = fruit
 
 output: 
 
-cat = fish
+    cat = fish
 
 ### The Multidimensional Array
     console.log(multiArray)
 
 output:
 
-[ [ 'dog', 'cat', 'hamster' ], [ 'meat', 'fish', 'fruit' ] ]
+    [ [ 'dog', 'cat', 'hamster' ], [ 'meat', 'fish', 'fruit' ] ]
 
 ## Jagged Arrays
 ### C# was used for the following:
@@ -150,4 +153,5 @@ output:
     }
 
 output:
-At row 4, col 0: 100
+     At row 4, col 0: 100
+ 
