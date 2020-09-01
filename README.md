@@ -15,14 +15,14 @@ output:
    
     7
 
-### If we try and get an index out of bounds we get an index out of bounds error. Program tries to access an index that doesn't exist 
+### Try and get an index out of bounds. Program tries to access an index that doesn't exist 
     print(anArray[100]) 
 
 output: 
 
     Fatal error: Index out of range
 
-### Above we saw that the code will give an error if we try and get the 100th index. but how many indexes are there?
+### Number of indexes
     print(numOfIndex) 
 
 this will give us the count of all the items in the array
@@ -30,7 +30,8 @@ this will give us the count of all the items in the array
 output: 
     
     13
-### Note that it tells us the number of items and not the index, so if there are 13 items in the given array, the index of the last item will be 12 as the index count starts from 0.
+    
+Note that it tells us the number of items and not the index, so if there are 13 items in the given array, the index of the last item will be 12 as the index count starts from 0.
 
 ### To get the of all the indexes in an array
     var sum=0
