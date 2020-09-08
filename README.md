@@ -294,7 +294,7 @@ output
 ## ArrayList
 ## Stacks
  ### Executed on swift
- In stacks the only to to ineteract with item is on Last In First Out bases cause there is no indexing in stacks
+ In stacks the only way to ineteract with item is on Last In First Out bases cause there is no indexing in stacks
  
      class Stack{
         var stackArray = [String]()
