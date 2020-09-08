@@ -293,10 +293,9 @@ output
 
 ## ArrayList
 ## Stacks
- ### Executed on swift
- In stacks the only way to ineteract with item is on Last In First Out bases cause there is no indexing in stacks
- 
-     class Stack{
+### Executed on swift
+Stacks follow First in Last out policy. There is no indexing in Stacks.
+    class Stack{
         var stackArray = [String]()
         //push
         func push(item:String){
@@ -339,7 +338,54 @@ output
     Second card to be removed is Jack of diamond
 
 
+## Queues
+### Executed on swift
+Queues follow First in First out policy. There is no indexing in Queues.
 
+    class Queue{
+            var queueArray = [String]()
+            //enqueue
+            func enqueue(item:String){
+                self.queueArray.append(item)
+            }
+            //dequeue
+            func dequeue()->String?{
+                if self.queueArray.first != nil{
+                    let firstString = self.queueArray.first
+                    self.queueArray.removeFirst()
+                    return firstString!
+                }else{return nil}
+
+            }
+            //peek
+            func peek()->String?{
+                if self.queueArray.first != nil{
+                    return self.queueArray.first!
+                }else{return nil}
+            }
+        }
+
+    var myQueue = Queue()
+    myQueue.enqueue(item: "Pranav")
+    myQueue.enqueue(item: "Sid")
+    myQueue.enqueue(item: "Jack")
+
+    print("First in queue: " + myQueue.peek()!)
+    var FirstInFirstOut = myQueue.dequeue() // Pranav Out
+    print("First to leave is " + FirstInFirstOut!)
+    print("Next in queue: " + myQueue.peek()!)
+    var secondtInsecondOut = myQueue.dequeue() // Sid Out
+    print("Second to leave is " + secondtInsecondOut!)
+    print("Next in queue: " + myQueue.peek()!)
+
+
+output
+
+    First in queue: Pranav
+    First to leave is Pranav
+    Next in queue: Sid
+    Second to leave is Sid
+    Next in queue: Jack
 
 
 
