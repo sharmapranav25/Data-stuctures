@@ -295,7 +295,9 @@ output
 ## Stacks
 ### Executed on swift
 Stacks follow First in Last out policy. There is no indexing in Stacks.
-        class Stack{
+       
+       
+       class Stack{
             var stackArray = [String]()
             //push
             func push(item:String){
