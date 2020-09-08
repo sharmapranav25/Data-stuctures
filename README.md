@@ -255,7 +255,7 @@ output:
             travelBucketList.removeFirst();
             System.out.print("\n \nLinkedList after removing items: \t" + travelBucketList);
 
-            //Remove Items pt2\
+            //Remove Items pt2
             travelBucketList.remove("Madrid-Spain");
             travelBucketList.remove(0); // AFter Removing Madrid (which was at zero), the next item becomes the head at index 0.
             System.out.print("\n \nLinkedList after removing more items: \t" + travelBucketList);
@@ -267,13 +267,13 @@ output
 
     
  
-    The second item is: 	San Jose-California
+    The second item is:     San Jose-California
 
-    The last item is: 	Vancouver-Canada
+    The last item is:   Vancouver-Canada
 
     The first item is: 	Paris-France
 
-    Barcelona is in the list: 	false
+    Barcelona is in the list:   false
 
     Madrid is in the list: 	true
 
