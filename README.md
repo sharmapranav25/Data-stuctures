@@ -220,3 +220,38 @@ output:
         80
         90
  
+ 
+ import java.util.LinkedList;
+
+## Operations with Linked Lists
+    public class MyClass {
+        public static void main(String args[]) {
+            LinkedList travelBucketList = new LinkedList();
+
+            //Add Items
+
+            travelBucketList.add("San Jose-California");
+            travelBucketList.addFirst("Paris-France");
+            travelBucketList.addLast( "Vancouver-Canada");
+            travelBucketList.add(1, "Madrid-Spain");
+
+            System.out.print(travelBucketList);
+
+
+            //Access
+            System.out.print("\n" + "The second item is: \t" + travelBucketList.get(2));
+            System.out.print("\n" +"The last item is: \t"+travelBucketList.getLast());
+            System.out.print("\n" +"The first item is: \t" +travelBucketList.getFirst());
+
+            //Search
+            System.out.print("\n" +"Barcelona is in the list: \t" +travelBucketList.contains("Barcelona-Spain"));
+            System.out.print("\n" +"Madrid is in the list: \t"+travelBucketList.contains("Madrid-Spain"));
+
+output
+
+    [Paris-France, Madrid-Spain, San Jose-California, Vancouver-Canada]
+    The second item is: 	San Jose-California
+    The last item is: 	Vancouver-Canada
+    The first item is: 	Paris-France
+    Barcelona is in the list: 	false
+    Madrid is in the list: 	true
