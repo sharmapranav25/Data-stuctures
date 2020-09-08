@@ -2,7 +2,7 @@
 A basic understanding of data structures
 
 ## Arrays
-### Swift was used for the following:
+### Executed on Swift
     
     var anArray=[0,3,5,0,7,64,7,8,1,4,0,7,5]
 
@@ -54,7 +54,7 @@ output:
 
 
 ## Multidimensional-Arrays
-### Javascript was used for the following:
+### Executed on JavaScript
 
     var multiArray=[['dog', 'cat', 'hamster'],['meat','meat','fruit']]
 
@@ -109,7 +109,7 @@ output:
     [ [ 'dog', 'cat', 'hamster' ], [ 'meat', 'fish', 'fruit' ] ]
 
 ## Jagged Arrays
-### C# was used for the following:
+### Executed on C#
 C# natively differentiates between jagged and multidimentional arrays, which some other languages don't.
     
     using System;
@@ -171,4 +171,51 @@ output:
     At row 3, col 3: 30
     At row 2, col 8: 0
     At row 1, col 2: 10
+    
+ 
+ 
+ ## Linked Lists
+ ### Executed on Jave
+ 
+ Java 
+ 
+     // linked list
+ public class LinkedList {
+     Node head;
+      public void add (int data){
+          // Linked list is empty
+          if (this.head== null) {
+              this.head=new Node(data);
+          }
+          else 
+          {
+          // Linked list is not empty
+          Node NodeToAdd = new Node(data);
+          NodeToAdd.next = this.head;
+          this.head = NodeToAdd;
+           }
+         }
+ 
+ public static void main(String[] args){
+     // Empty list
+     LinkedList myList = new LinkedList();
+     myList.add(90);
+     // Not Empty
+     myList.add(80);
+     System.out.print(myList.head.data);
+     System.out.print("\n" + myList.head.next.data);
+     }
+     
+ // node
+ class Node{
+     int data;
+     Node next;
+     
+     Node(int d){this.data = d;}
+     }
+ }
+ 
+output:
+    80
+    90
  
