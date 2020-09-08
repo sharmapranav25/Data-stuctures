@@ -221,7 +221,7 @@ output:
         90
  
  
- import java.util.LinkedList;
+ 
 
 ## Operations with Linked Lists
     import java.util.LinkedList;
@@ -280,3 +280,21 @@ output
     LinkedList after removing items: 	[Madrid-Spain, San Jose-California]
 
     LinkedList after removing more items: 	[]
+    
+
+
+## Doubly Linked-List
+
+
+
+
+## Circular Linked-List
+
+
+## ArrayList
+    
+
+
+
+
+
