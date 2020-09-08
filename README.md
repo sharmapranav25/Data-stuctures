@@ -295,19 +295,19 @@ output
 ## Stacks
 ### Executed on swift
 Stacks follow First in Last out policy. There is no indexing in Stacks.
-    class Stack{
-        var stackArray = [String]()
-        //push
-        func push(item:String){
-            self.stackArray.append(item)
-        }
-        //pop
-        func pop()->String?{
-            if self.stackArray.last != nil{
-                let lastString = self.stackArray.last
-                self.stackArray.removeLast()
-                return lastString!
-            }else{return nil}
+        class Stack{
+            var stackArray = [String]()
+            //push
+            func push(item:String){
+                self.stackArray.append(item)
+            }
+            //pop
+            func pop()->String?{
+                if self.stackArray.last != nil{
+                    let lastString = self.stackArray.last
+                    self.stackArray.removeLast()
+                    return lastString!
+                }else{return nil}
 
         }
         //peek
