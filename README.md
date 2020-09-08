@@ -175,7 +175,7 @@ output:
  
  
  ## Linked Lists
- ### Executed on Jave
+ ### Executed on Java
  
  
  
@@ -216,6 +216,7 @@ output:
      }
  
 output:
+        
         80
         90
  
