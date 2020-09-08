@@ -177,45 +177,45 @@ output:
  ## Linked Lists
  ### Executed on Jave
  
- Java 
+ 
  
      // linked list
- public class LinkedList {
-     Node head;
-      public void add (int data){
-          // Linked list is empty
-          if (this.head== null) {
-              this.head=new Node(data);
-          }
-          else 
-          {
-          // Linked list is not empty
-          Node NodeToAdd = new Node(data);
-          NodeToAdd.next = this.head;
-          this.head = NodeToAdd;
-           }
+     public class LinkedList {
+         Node head;
+          public void add (int data){
+              // Linked list is empty
+              if (this.head== null) {
+                  this.head=new Node(data);
+              }
+              else 
+              {
+              // Linked list is not empty
+              Node NodeToAdd = new Node(data);
+              NodeToAdd.next = this.head;
+              this.head = NodeToAdd;
+               }
+             }
+
+     public static void main(String[] args){
+         // Empty list
+         LinkedList myList = new LinkedList();
+         myList.add(90);
+         // Not Empty
+         myList.add(80);
+         System.out.print(myList.head.data);
+         System.out.print("\n" + myList.head.next.data);
          }
- 
- public static void main(String[] args){
-     // Empty list
-     LinkedList myList = new LinkedList();
-     myList.add(90);
-     // Not Empty
-     myList.add(80);
-     System.out.print(myList.head.data);
-     System.out.print("\n" + myList.head.next.data);
+
+     // node
+     class Node{
+         int data;
+         Node next;
+
+         Node(int d){this.data = d;}
+         }
      }
-     
- // node
- class Node{
-     int data;
-     Node next;
-     
-     Node(int d){this.data = d;}
-     }
- }
  
 output:
-    80
-    90
+        80
+        90
  
