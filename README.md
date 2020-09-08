@@ -292,7 +292,102 @@ output
 
 
 ## ArrayList
+## Stacks
+### Executed on swift
+Stacks follow First in Last out policy. There is no indexing in Stacks.
+    class Stack{
+        var stackArray = [String]()
+        //push
+        func push(item:String){
+            self.stackArray.append(item)
+        }
+        //pop
+        func pop()->String?{
+            if self.stackArray.last != nil{
+                let lastString = self.stackArray.last
+                self.stackArray.removeLast()
+                return lastString!
+            }else{return nil}
+
+        }
+        //peek
+        func peek()->String?{
+            if self.stackArray.last != nil{
+                return self.stackArray.last!
+            }else{return nil}
+        }
+    }
+    var deck:Stack = Stack()
+
+    deck.push(item: "King of hearts")
+    deck.push(item: "Queen of spade")
+    deck.push(item: "Jack of diamond")
+    deck.push(item: "A of club")
+    print("Card on top is "+deck.peek()!)
+
+    var FistCardPopped = deck.pop()
+    var SecondCardPopped = deck.pop()
+    print("First card to be removed is "+FistCardPopped!)
+    print("Second card to be removed is "+SecondCardPopped!)
+
+
+output
     
+    Card on top is A of club
+    First card to be removed is A of club
+    Second card to be removed is Jack of diamond
+
+
+## Queues
+### Executed on swift
+Queues follow First in First out policy. There is no indexing in Queues.
+
+    class Queue{
+            var queueArray = [String]()
+            //enqueue
+            func enqueue(item:String){
+                self.queueArray.append(item)
+            }
+            //dequeue
+            func dequeue()->String?{
+                if self.queueArray.first != nil{
+                    let firstString = self.queueArray.first
+                    self.queueArray.removeFirst()
+                    return firstString!
+                }else{return nil}
+
+            }
+            //peek
+            func peek()->String?{
+                if self.queueArray.first != nil{
+                    return self.queueArray.first!
+                }else{return nil}
+            }
+        }
+
+    var myQueue = Queue()
+    myQueue.enqueue(item: "Pranav")
+    myQueue.enqueue(item: "Sid")
+    myQueue.enqueue(item: "Jack")
+
+    print("First in queue: " + myQueue.peek()!)
+    var FirstInFirstOut = myQueue.dequeue() // Pranav Out
+    print("First to leave is " + FirstInFirstOut!)
+    print("Next in queue: " + myQueue.peek()!)
+    var secondtInsecondOut = myQueue.dequeue() // Sid Out
+    print("Second to leave is " + secondtInsecondOut!)
+    print("Next in queue: " + myQueue.peek()!)
+
+
+output
+
+    First in queue: Pranav
+    First to leave is Pranav
+    Next in queue: Sid
+    Second to leave is Sid
+    Next in queue: Jack
+
+
 
 
 
