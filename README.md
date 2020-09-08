@@ -292,7 +292,56 @@ output
 
 
 ## ArrayList
+## Stacks
+ ### Executed on swift
+ In stacks the only to to ineteract with item is on Last In First Out bases cause there is no indexing in stacks
+ 
+     class Stack{
+        var stackArray = [String]()
+        //push
+        func push(item:String){
+            self.stackArray.append(item)
+        }
+        //pop
+        func pop()->String?{
+            if self.stackArray.last != nil{
+                let lastString = self.stackArray.last
+                self.stackArray.removeLast()
+                return lastString!
+            }else{return nil}
+
+        }
+        //peek
+        func peek()->String?{
+            if self.stackArray.last != nil{
+                return self.stackArray.last!
+            }else{return nil}
+        }
+    }
+    var deck:Stack = Stack()
+
+    deck.push(item: "King of hearts")
+    deck.push(item: "Queen of spade")
+    deck.push(item: "Jack of diamond")
+    deck.push(item: "A of club")
+    print("Card on top is "+deck.peek()!)
+
+    var FistCardPopped = deck.pop()
+    var SecondCardPopped = deck.pop()
+    print("First card to be removed is "+FistCardPopped!)
+    print("Second card to be removed is "+SecondCardPopped!)
+
+
+output
     
+    Card on top is A of club
+    First card to be removed is A of club
+    Second card to be removed is Jack of diamond
+
+
+
+
+
 
 
 
