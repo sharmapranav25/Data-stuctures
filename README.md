@@ -224,6 +224,9 @@ output:
  import java.util.LinkedList;
 
 ## Operations with Linked Lists
+    import java.util.LinkedList;
+
+
     public class MyClass {
         public static void main(String args[]) {
             LinkedList travelBucketList = new LinkedList();
@@ -239,19 +242,41 @@ output:
 
 
             //Access
-            System.out.print("\n" + "The second item is: \t" + travelBucketList.get(2));
-            System.out.print("\n" +"The last item is: \t"+travelBucketList.getLast());
-            System.out.print("\n" +"The first item is: \t" +travelBucketList.getFirst());
+            System.out.print("\n \nThe second item is: \t" + travelBucketList.get(2));
+            System.out.print("\n \nThe last item is: \t"+travelBucketList.getLast());
+            System.out.print("\n\nThe first item is: \t" +travelBucketList.getFirst());
 
             //Search
-            System.out.print("\n" +"Barcelona is in the list: \t" +travelBucketList.contains("Barcelona-Spain"));
-            System.out.print("\n" +"Madrid is in the list: \t"+travelBucketList.contains("Madrid-Spain"));
+            System.out.print("\n \nBarcelona is in the list: \t" +travelBucketList.contains("Barcelona-Spain"));
+            System.out.print("\n \nMadrid is in the list: \t"+travelBucketList.contains("Madrid-Spain"));
+
+            //Remove Items
+            travelBucketList.removeLast();
+            travelBucketList.removeFirst();
+            System.out.print("\n \nLinkedList after removing items: \t" + travelBucketList);
+
+            //Remove Items pt2\
+            travelBucketList.remove("Madrid-Spain");
+            travelBucketList.remove(0); // AFter Removing Madrid (which was at zero), the next item becomes the head at index 0.
+            System.out.print("\n \nLinkedList after removing more items: \t" + travelBucketList);
+
+        }
+    }
 
 output
 
-    [Paris-France, Madrid-Spain, San Jose-California, Vancouver-Canada]
+    
+ 
     The second item is: 	San Jose-California
+
     The last item is: 	Vancouver-Canada
+
     The first item is: 	Paris-France
+
     Barcelona is in the list: 	false
+
     Madrid is in the list: 	true
+
+    LinkedList after removing items: 	[Madrid-Spain, San Jose-California]
+
+    LinkedList after removing more items: 	[]
