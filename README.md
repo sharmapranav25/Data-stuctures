@@ -390,8 +390,69 @@ output
     Next in queue: Jack
 
 
+## Hashing
+### Executed on python
+Associative Arrays: collection of key value pairs
 
 
+    #Key=Country
+    #Value=Capital
+    CountriesCap={}
+    CountriesCap['India']='New Delhi'
+    CountriesCap['France']='Paris'
+
+    print(CountriesCap['France'])
+
+ouptput
+
+    Paris
 
 
+## Sets
+### Executed on python
+
+    primaryColours = frozenset(['red','blue','yellow']) # frozen makes the set finite, that means nothing can be added to it
+
+    colour='yellow' #primary colour
+
+    if colour.lower() in primaryColours:
+        print(colour + ' is a primary colour')
+    else:
+        print(colour + ' is a primary colour')
+
+    color='Black' #not primary
+
+    if color.lower() in primaryColours:
+        print(color + ' is a primary colour')
+    else:
+        print(color + ' is not a primary colour')
+    
+output:
+
+    yellow is a primary colour
+    Black is not a primary colour
+    
+    
+Frozenset
+
+    primary = set(['a','b','c']) 
+    secondary = frozenset(['e','f','g'])
+
+    print(primary)
+    print(secondary)
+
+    primary.add('d')
+    print(primary)
+    b=secondary.add('d') #will give error
+
+output
+
+    {'b', 'a', 'c'}
+    frozenset({'f', 'e', 'g'})
+    {'b', 'd', 'a', 'c'}
+
+    Traceback (most recent call last):
+      File "jdoodle.py", line 9, in <module>
+        b=secondary.add('d')
+    AttributeError: 'frozenset' object has no attribute 'add'
 
